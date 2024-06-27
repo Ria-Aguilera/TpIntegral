@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autores" content="Paez Aguilera Maria - Paez Aguilera Facundo">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="FILMS.webp" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>DUE FILMS</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <img src="DUE.png">
+            <nav class="nav-header">
+                <a href="index.html">Servios</a>
+                <a href="index.html">Proceso Creativo</a>
+                <a href="index.html">Portafolio</a>
+                <a href="index.html">Autores</a>
+                <div class="dropdown">
+                    <span>Acceder</span>
+                    <div class="dropdown-content">
+                        <!--agregar las paginas-->
+                        <a href="index.html">Inicio</a>
+                        <a href="#">Calendario</a>
+                        <a href="#">Ayuda</a>
+                        <a href="#">Encuesta</a>
+                        <a href="#">Preguntas Frecuentes</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="principal">
+        <section class="señar-evento">
+            <h2>Señar Evento</h2>
+            <form action="#" method="post" class="seña-form">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="date">Fecha</label>
+                <input type="date" id="date" name="date">
+                <label for="lugar">Lugar</label>
+                <input type="text" id="lugar" name="lugar" required>
+                <label for="time">Horario Estimado</label>
+                <input type="time" id="time" name="time" required>
+                <label for="tel">Contacto</label>
+                <input type="tel" id="tel" name="tel" placeholder="+54 900 000 000" pattern="\+34 [0-9]{9}" required>
+                <label for="email">Mail</label>
+                <input type="email" id="email" name="email" required>
+                <label for="paquete">Paquete Seleccionado</label>
+                <select name="paquete" id="paquete">
+                    <option value="">...</option>
+                    <option value="15años">15 Años</option>
+                    <option value="boda">Boda</option>
+                    <option value="evento">Evento</option>
+                    <option value="produ.audiovisual">Producción Audiovisual</option>
+                </select>
+                <label for="payment-plan">Plan de Pago:</label>
+                <select id="payment-plan" name="payment-plan" required>
+                    <option value="">...</option>
+                    <option value="mensual">Mensual</option>
+                    <option value="trimestral">Trimestral</option>
+                    <option value="anual">Anual</option>
+                </select>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <nav class="social">
+                <a href="https://www.instagram.com/" target="_blank"><i class='bx bxl-instagram'></i></a>
+                <a href="https://www.tiktok.com/discover?lang=es" target="_blank"><i class='bx bxl-tiktok'></i></a>
+                <a href="https://g.co/kgs/sUHUd2A" target="_blank"><i class='bx bx-map'></i></a>
+            </nav>
+            <p>&copy; 2014 YOUR SITE | Designed By: DUEFILMS, All right reserved.</p>
+        </div>
+    </footer>
+</body>
